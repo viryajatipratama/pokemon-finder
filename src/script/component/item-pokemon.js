@@ -54,12 +54,12 @@ class ItemPokemon extends HTMLElement{
       }
         </style>
 
-        <img class="pokemon-name" src="${this._pokemon.sprites.other.home.front_default}">
+        <img class="pokemon-name" src="">
         <div class="pokemon-detail">
-          <h2>${this._pokemon.forms.name}</h2>
-          <p>${this._pokemon.types[0].type.name}</p>
-          <p>${this._pokemon.types[1].type.name}</p>
+          <h2>${this._pokemon.name}</h2>
         </div>
         `
     }
 }
+
+customElements.define('item-pokemon', ItemPokemon);
