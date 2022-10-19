@@ -17,7 +17,7 @@ class searchPokemon extends HTMLElement {
   }
 
   get value() {
-    return this.shadowDOM.querySelector("#searchBar").value;
+    return this.shadowDOM.querySelector("#searchElement").value;
   }
 
   render() {
